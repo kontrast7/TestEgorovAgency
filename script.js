@@ -1,5 +1,5 @@
-const popupID = document.querySelector("#popup");
-const modal = document.querySelector("#modal");
+const modal = document.querySelector("#modalID");
+const modalIDContent = document.querySelector("#modalIDContent");
 
 let form;
 
@@ -8,8 +8,8 @@ function findElements() {
 }
 
 function showMessage(data) {
-    modal.style.display = "block";
-    modal.innerHTML = data.message
+  modal.style.display = "block";
+  modalIDContent.style.display = "block";
 }
 
 function onSuccess(data) {
@@ -53,16 +53,14 @@ function init() {
   subscribe();
 }
 
-
 function hideModal() {
-    modal.style.display = "none";
+  modal.style.display = "none";
 }
 
 window.onclick = function (event) {
-    if (event.target.className === "modalClass") {
-      event.target.style.display = "none";
-    }
-  };
-
+  if (event.target.className === "modal") {
+    event.target.style.display = "none";
+  }
+};
 
 init();
