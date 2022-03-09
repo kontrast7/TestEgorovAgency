@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Title</title>
+    <link href="style.css" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+
+
+    <div class="container">
+      <header>
+        <a href="#">
+          <img class="logo" src="./assets/logo.svg" />
+        </a>
+      </header>
+
+      <div class="title">Under Construction</div>
+      <div class="subtitle">
+        We're making lots of improvements and will be back soon
+      </div>
+
+      <div class="containerTimer">
+        <div class="timer">
+          <div class="timerItem" id="days"></div>
+          <div class="timerItem" id="hours"></div>
+          <div class="timerItem" id="minutes"></div>
+          <div class="timerItem" id="seconds"></div>
+        </div>
+
+        <div class="containerLabel">
+          <div class="labelWrapper">
+            <img class="labelImg" src="./assets/label.svg" />
+            <span class="labelText">Days</span>
+          </div>
+          <div class="labelWrapper">
+            <img class="labelImg" src="./assets/label.svg" />
+            <span class="labelText">Hours</span>
+          </div>
+          <div class="labelWrapper">
+            <img class="labelImg" src="./assets/label.svg" />
+            <span class="labelText2">Minutes</span>
+          </div>
+          <div class="labelWrapper">
+            <img class="labelImg" src="./assets/label.svg" />
+            <span class="labelText2">Seconds</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="subtitle subtitle2">Check our event page when you wait:</div>
+
+      <button
+        class="btnLink"
+        onclick="window.location.href = 'https://egorovagency.by/#mai'"
+      >
+        <div class="btnWrapper">
+          Go to the event
+          <img src="./assets/arrow.svg" />
+        </div>
+      </button>
+
+
+
+      <div id="popup"></div>
+    </div>
+    <footer>
+        <div class="containerForm">
+      <form
+        action="https://private-c4cefc-codepenvf.apiary-mock.com/sendform">
+        
+        <input
+          class="inputEmail"
+          name="message"
+          placeholder="Enter your Email and get notified"
+          type="email"
+          required
+        />
+        <button class="btnSend">
+          <img src="./assets/arrow.svg" />
+          </button>
+      </form>
+  </div>
+    </footer>
+
+
+    <!-- <p>
+        <button class="button" data-modal="modalOne">Contact Us</button>
+      </p> -->
+
+     
+          
+      <div id="modal" class="modalClass">
+        <div class="modal-content">
+            <button onclick="hideModal()" class="close">&times;</button>
+            <div>SUCCESS!</div>
+            <div>You have successfully subscribed to the email newsletter</div>
+            
+            <button onclick="hideModal()" class="close">Close</button>
+        </div>
+      </div>
+
+    <script src="Timer.js"></script>
+    <script src="script.js"></script>
+    <script>
+      
+    </script>
+  </body>
+</html>
