@@ -1,14 +1,14 @@
-var hoursID = document.querySelector('#hours');
-var daysID = document.querySelector('#days');
-var minutesID = document.querySelector('#minutes');
-var secondsID = document.querySelector('#seconds');
+const hoursID = document.querySelector('#hours');
+const daysID = document.querySelector('#days');
+const minutesID = document.querySelector('#minutes');
+const secondsID = document.querySelector('#seconds');
 
 timer();
 setInterval(timer, 1000);
 
 function timer() {
-	var now = new Date();
-	var target = new Date(
+	const now = new Date();
+	const target = new Date(
 		now.getFullYear() + 1,
 		0,
 		1,
@@ -17,12 +17,12 @@ function timer() {
 		0
 	);
 	
-	var diff = Math.ceil((target - now) / 1000);
+	const diff = Math.ceil((target - now) / 1000);
 	
-	var days = extract(diff, 60 * 60 * 24);
-	var hours = extract(days.diff, 60 * 60);
-	var minutes = extract(hours.diff, 60);
-	var seconds = extract(minutes.diff, 1);
+	const days = extract(diff, 60 * 60 * 24);
+	const hours = extract(days.diff, 60 * 60);
+	const minutes = extract(hours.diff, 60);
+	const seconds = extract(minutes.diff, 1);
 	
 
     daysID.innerHTML = addZero(days.value)+ ` :`;
@@ -32,7 +32,7 @@ function timer() {
 }
 
 function extract(diff, formula) {
-	var value = Math.floor(diff / formula);
+	const value = Math.floor(diff / formula);
 	var diff = diff % formula;
 	
 	return {value: value, diff: diff};
