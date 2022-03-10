@@ -159,6 +159,10 @@ header {
   margin-top: 12px;
 }
 
+.btn-link:hover {
+  background: #27588f;
+}
+
 .btn-wrapper {
   display: flex;
   justify-content: space-around;
@@ -194,6 +198,11 @@ header {
   border: none;
   background: #df2224;
   border-radius: 50%;
+  cursor: pointer;
+}
+
+.btn-send:hover {
+  background: #ee2528;
 }
 
 .container-form {
@@ -244,6 +253,7 @@ footer {
   background-image: none;
   background: transparent;
   background-color: transparent;
+  cursor: pointer;
 }
 
 .modal-btn-wrapper {
@@ -289,6 +299,7 @@ footer {
   line-height: 150%;
   border: none;
   color: #ffffff;
+  cursor: pointer;
 }
 
 .modal-btn-wrapper-text {
@@ -412,7 +423,7 @@ footer {
     font-size: 14px;
     line-height: 150%;
   }
-  
+
   .container {
     height: 100vh;
     max-width: 700px;
@@ -438,26 +449,26 @@ footer {
     font-size: 25px;
     width: 60px;
   }
-  
+
   .label-wrapper:not(:last-child) {
     width: 20px;
   }
 
-  .label-text{
-    color: #162c4e
+  .label-text {
+    color: #162c4e;
   }
 
-  .label-text2{
+  .label-text2 {
     color: #162c4e;
     text-align: center;
   }
 
   .label-img {
-    display:none;
+    display: none;
   }
 
   .label-text::before {
     text-align: center;
-    width:20px;
+    width: 20px;
   }
 }
