@@ -16,7 +16,6 @@ function timer() {
 		0,
 		0
 	);
-	
 	const diff = Math.ceil((target - now) / 1000);
 	
 	const days = extract(diff, 60 * 60 * 24);
@@ -33,7 +32,7 @@ function timer() {
 
 function extract(diff, formula) {
 	const value = Math.floor(diff / formula);
-	var diff = diff % formula;
+	diff = diff % formula;
 	
 	return {value: value, diff: diff};
 }
