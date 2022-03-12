@@ -86,11 +86,11 @@ header {
 }
 
 .timer-item:not(:last-child) {
-  width: 170px;
+  width: 180px;
   padding-right: 15px;
 }
 .timer-item {
-  width: 170px;
+  width: 180px;
 }
 
 .container-label {
@@ -361,12 +361,12 @@ footer {
 
   .timer-item {
     height: 56px;
-    width: 85px;
+    width: 95px;
   }
 
   .timer-item:not(:last-child) {
     height: 56px;
-    width: 85px;
+    width: 95px;
     padding-right: 15px;
   }
 
